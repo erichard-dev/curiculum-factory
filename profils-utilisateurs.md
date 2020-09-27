@@ -7,32 +7,50 @@ Ainsi nous souhaitons mieux déterminer les cibles de l'application et les utili
 
 ### profil 1
 
-nom : Ibrahimovic 
+nom : Ibrahimovic
+
 prénom : Zoltan
+
 âge : 24
+
 profession : Développeur Web
+
 expérience professionnelle : Aucune
+
 études : Informatique du WEB
+
 traits de caractère : Flèmare
 
 ### profil 2
 
 nom : Morgane
+
 prénom : Clara
+
 âge : 40
+
 profession : Chargé de communication
+
 expérience professionnelle : + 10 ans dans le marketting
+
 études : Master de communication
+
 traits de caractère : Curieuse
 
 ### profil 3
 
 nom : Zémour
+
 prénom : Eric
+
 âge : 34
+
 profession : Employé des ressources humaine
+
 expérience professionnelle : 10 ans dans le rerutement de nouveaux talents
+
 études : ...
+
 traits de caractère : minucieux
 
 ## Scénarii
