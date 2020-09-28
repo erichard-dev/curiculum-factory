@@ -53,7 +53,7 @@ expérience professionnelle : 10 ans dans le rerutement de nouveaux talents
 
 traits de caractère : minucieux
 
-## Scénarii
+## Scénario
 
 ### scénario 1
 
@@ -72,3 +72,16 @@ n'importe quelle machine ayant une connexion internet. De plus son CV pourra êt
 option est d'exporter les données textuelles entrées sous la forme d'un fichier .csv. Elle pourra la prochaine fois importer le fichier pour faire réapparaître son travail depuis
 n'import quel template. Elle opte pour la deuxième solution. Elle appuie sur exporter et enregistre le fichier .csv sur son système au même emplacement que le fichier .pdf. L'application
 est toujours sur la page d'édition. Elle ferme son navigateur, satisfaite de son travail.
+
+
+### scénario 1
+Zoltan cherche un emploi --->il a besoin d'un CV ----> il tape sur google crée un CV en ligne ---> il voit beaucoup de site ----->il décide de faire le meilleurs choix afin de faire un bon CV ------>on parcourant les différent site il s'apperçoit que la plupart sont payante ----->avec un peu de chance il tombe sur notre site et découvre ces quelques fonctionalités qu'il n'a pas trouvé ailleurs
+-Pas besooin de se connecter
+-Pas besoin de payer
+-Des template de CV beaucoup sophistiqué
+-Un large choix de modèle de  cv   parmis des dizaines
+-Facile a manipuler
+-Des type de présentation de cv qu'il n'ont pas encore été proposé ailleurs comme: le CV peut être consultable en ligne,des graphes/courbe pour présenter les softs skill et les compétence,des réseaux sociaux dynamique.
+Zoltan est content de son choix il a crée son CV il a ajouté le fait que son CV soit publique et consultable par les recruteurs  il apprécie alors le service et décide de revenir la prochaine fois quand il aura besoin de CV
+
+-
