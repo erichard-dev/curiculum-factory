@@ -74,7 +74,7 @@ n'import quel template. Elle opte pour la deuxième solution. Elle appuie sur ex
 est toujours sur la page d'édition. Elle ferme son navigateur, satisfaite de son travail.
 
 
-### scénario 1
+### scénario 2
 Zoltan cherche un emploi --->il a besoin d'un CV ----> il tape sur google crée un CV en ligne ---> il voit beaucoup de site ----->il décide de faire le meilleurs choix afin de faire un bon CV ------>on parcourant les différent site il s'apperçoit que la plupart sont payante ----->avec un peu de chance il tombe sur notre site et découvre ces quelques fonctionalités qu'il n'a pas trouvé ailleurs
 -Pas besooin de se connecter
 -Pas besoin de payer
