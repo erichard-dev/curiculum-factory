@@ -85,3 +85,9 @@ Zoltan cherche un emploi ---> il a besoin d'un CV ----> il tape sur google crée
     compétences, des réseaux sociaux dynamiques.
 
 Zoltan est content de son choix il a créé son CV il a ajouté le fait que son CV soit publique et consultable par les recruteurs. Il apprécie alors le service et décide de revenir la prochaine fois quand il aura besoin d'un nouveau CV.
+
+### scénario 3
+
+Eric Zémour est chasseur de tête pour une entreprise. Il est toujours à la recherche de nouveaux talents pour son entreprise. Il consulte régulièrement les réseaux sociaux professionnelles afin de trouver les perles rares. Un jour, il se connecte au curiculum-factory. Il constate sur la page d'acceuil la présence d'un espace dédié aux recruteurs. 
+Il décide d'y entrer. Pas besoin de créer un compte pour y accéder. Zémour apprécie. Une liste de nombreux CV apparaît. Zémour remarque la présence de la fonction de filtrage qui va lui permettre de rechercher les CV selon des critères. Il sélectionne les critères qui l'intéresse. La liste des CV se réduit. Seul quelques CV répondent aux critères. Il clique sur l'un des CV pour en voir la vue détaillée. Le CV ne l'intéresse pas. Il a la possibilité de revenir en arrière ou consulter le CV suivant ou précédent grâce à des flèches directionnelles. 
+Il parcours les CV et finit par trouver la personne qu'il cherchait. Il a maintenant la possibilité de sortir le CV au format .pdf.
