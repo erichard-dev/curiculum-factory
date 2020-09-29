@@ -75,13 +75,13 @@ est toujours sur la page d'édition. Elle ferme son navigateur, satisfaite de so
 
 
 ### scénario 2
-Zoltan cherche un emploi --->il a besoin d'un CV ----> il tape sur google crée un CV en ligne ---> il voit beaucoup de site ----->il décide de faire le meilleurs choix afin de faire un bon CV ------>on parcourant les différent site il s'apperçoit que la plupart sont payante ----->avec un peu de chance il tombe sur notre site et découvre ces quelques fonctionalités qu'il n'a pas trouvé ailleurs
--Pas besooin de se connecter
--Pas besoin de payer
--Des template de CV beaucoup sophistiqué
--Un large choix de modèle de  cv   parmis des dizaines
--Facile a manipuler
--Des type de présentation de cv qu'il n'ont pas encore été proposé ailleurs comme: le CV peut être consultable en ligne,des graphes/courbe pour présenter les softs skill et les compétence,des réseaux sociaux dynamique.
-Zoltan est content de son choix il a crée son CV il a ajouté le fait que son CV soit publique et consultable par les recruteurs  il apprécie alors le service et décide de revenir la prochaine fois quand il aura besoin de CV
+Zoltan cherche un emploi ---> il a besoin d'un CV ----> il tape sur google créer un CV en ligne ---> il voit beaucoup de sites -----> il décide de faire le meilleur choix afin de faire un bon CV ------> en parcourant les différents sites il s'apperçoit que la plupart sont payants -----> avec un peu de chance il tombe sur notre site et découvre ses quelques fonctionalités qu'il n'a pas trouvé ailleurs
+  * Pas besoin de se connecter
+  * Pas besoin de payer
+  * Des templates de CV beaucoup plus sophistiqués
+  * Un large choix de modèles de CV parmis des dizaines
+  * Facile à manipuler
+  * Des types de présentations de CV qui n'ont pas encore été proposés ailleurs comme : le CV peut-être consultable en ligne, des graphes/courbe pour présenter les softs skills et les
+    compétences, des réseaux sociaux dynamiques.
 
--
+Zoltan est content de son choix il a créé son CV il a ajouté le fait que son CV soit publique et consultable par les recruteurs. Il apprécie alors le service et décide de revenir la prochaine fois quand il aura besoin d'un nouveau CV.
