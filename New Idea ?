@@ -1,0 +1,10 @@
+* Ici les nouveaux idées à ajouter avant ou après le déploiement de l'application
+-Idée 1 :Le recruteur peut crée un compte et ajouter des CV favoris on auras donc un nouveau profil recruteur
+problème posée : le recruteur n'auras pas le même profil qu'un demandeur de CV 
+                :donc un utulisateur quand il crée un compte il a directement un profil recruteur et un profil créateur de CV 
+                : 2 choix possible dans la maquette
+                -1er choix :à la page d'accueil y'auras deux link un qui dirige vers celui du recruteur et un celui du créateur
+                -2ème (choix celui que je préfere): quand l'utulisateur clique sur "monprofil" il y'auras de base le profil créateur et il pourra changer vers le profil recruteur
+-Idée 2 :Un système de recomondations ? pour le recruteur          
+          
+                
