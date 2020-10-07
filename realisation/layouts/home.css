@@ -1,0 +1,37 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    border: 1px solid black;
+}
+
+section {
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+}
+
+article h1 {
+    text-align: center;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+ul {
+    list-style-type: none;
+  }
