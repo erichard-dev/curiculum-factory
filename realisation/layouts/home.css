@@ -9,7 +9,9 @@ header h1 {
 }
 
 section {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
     max-width: 1000px;
     margin: auto;
 }
@@ -28,10 +30,17 @@ article h1 {
 
 footer div {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 10px;
 }
 
 ul {
     list-style-type: none;
+  }
+
+  article img {
+      border: 1px solid black;
+    max-width: 100%;
+    display: block;
   }
