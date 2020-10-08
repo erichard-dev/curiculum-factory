@@ -10,7 +10,9 @@ header h1 {
 
 .grid {
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 5px;
+    gap: 5px;
 }
 
 footer {
@@ -31,3 +33,11 @@ footer div {
 ul {
     list-style-type: none;
   }
+
+.editing {
+    border: 1px solid black;
+}
+
+.result {
+    border: 1px solid black;
+}
