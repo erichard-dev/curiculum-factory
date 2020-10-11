@@ -11,8 +11,8 @@
         </header>
         <main class="grid">
             <section class="form">
-                <fieldset>
-                    <legend>Identité</legend>
+                <details>
+                    <summary>Identité</summary>
                     <ul>
                         <li>
                             <label for="first-name">prénom : </label><input type="text" id="first-name" name="firstname">
@@ -24,9 +24,9 @@
                             <label for="photo">photo : </label><input type="file" id="photo" name="photo">
                         </li>
                     </ul>
-                </fieldset>
-                <fieldset>
-                    <legend>Coordonnées</legend>
+                </details>
+                <details>
+                    <summary>Coordonnées</summary>
                     <ul>
                         <li>
                             <label for="address">adresse : </label><input type="text" id="address" name="address">
@@ -38,41 +38,81 @@
                             <label for="telephone">téléphone : </label><input type="tel" id="telephone" name="phone">
                         </li>
                     </ul>
-                </fieldset>
-                <fieldset>
-                    <legend>Expérience Professionnelle</legend>
-                    <ul>
-                        <li>
-                            <label for="compagny">nom de l'entreprise : </label><input type="text" id="compagny" name="compagny">
-                        </li>
-                        <li>
-                            <label for="duration">durée : </label><input type="text" id="duration" name="duration" placeholder="26/05/1992-11/10/2020">
-                        </li>
-                        <li>
-                            <label for="status">position : </label><input type="text" id="status" name="status">
-                        </li>
-                        <li>
-                            <label for="description">description : </label><input type="text" id="description" name="description">
-                        </li>
-                    </ul>
-                </fieldset>
-                <fieldset>
-                    <legend>Formation</legend>
-                    <ul>
-                        <li>
-                            <label for="school-name">nom de l'école : </label><input type="text" id="school-name" name="schoolname">
-                        </li>
-                        <li>
-                            <label for="duration">durée : </label><input type="text" id="duration" name="duration" placeholder="26/05/1992-11/10/2020">
-                        </li>
-                        <li>
-                            <label for="diploma">position : </label><input type="text" id="diploma" name="diploma">
-                        </li>
-                        <li>
-                            <label for="description">description : </label><input type="text" id="description" name="description">
-                        </li>
-                    </ul>
-                </fieldset>
+                </details>
+                <details>
+                    <summary>Expériences Professionnelles</summary>
+                    <details>
+                        <summary>Expérience Professionnelle 1</summary>
+                        <ul>
+                            <li>
+                                <label for="compagny">nom de l'entreprise : </label><input type="text" id="compagny" name="compagny">
+                            </li>
+                            <li>
+                                <label for="duration">durée : </label><input type="text" id="duration" name="duration" placeholder="26/05/1992-11/10/2020">
+                            </li>
+                            <li>
+                                <label for="status">position : </label><input type="text" id="status" name="status">
+                            </li>
+                            <li>
+                                <label for="description">description : </label><input type="text" id="description" name="description">
+                            </li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Expérience Professionnelle 2</summary>
+                        <ul>
+                            <li>
+                                <label for="compagny">nom de l'entreprise : </label><input type="text" id="compagny" name="compagny">
+                            </li>
+                            <li>
+                                <label for="duration">durée : </label><input type="text" id="duration" name="duration" placeholder="26/05/1992-11/10/2020">
+                            </li>
+                            <li>
+                                <label for="status">position : </label><input type="text" id="status" name="status">
+                            </li>
+                            <li>
+                                <label for="description">description : </label><input type="text" id="description" name="description">
+                            </li>
+                        </ul>
+                    </details>
+                </details>
+                <details>
+                    <summary>Formations</summary>
+                    <details>
+                        <summary>Formation 1</summary>
+                        <ul>
+                            <li>
+                                <label for="school-name">nom de l'école : </label><input type="text" id="school-name" name="schoolname">
+                            </li>
+                            <li>
+                                <label for="duration">durée : </label><input type="text" id="duration" name="duration" placeholder="26/05/1992-11/10/2020">
+                            </li>
+                            <li>
+                                <label for="diploma">position : </label><input type="text" id="diploma" name="diploma">
+                            </li>
+                            <li>
+                                <label for="description">description : </label><input type="text" id="description" name="description">
+                            </li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Formation 2</summary>
+                        <ul>
+                            <li>
+                                <label for="school-name">nom de l'école : </label><input type="text" id="school-name" name="schoolname">
+                            </li>
+                            <li>
+                                <label for="duration">durée : </label><input type="text" id="duration" name="duration" placeholder="26/05/1992-11/10/2020">
+                            </li>
+                            <li>
+                                <label for="diploma">position : </label><input type="text" id="diploma" name="diploma">
+                            </li>
+                            <li>
+                                <label for="description">description : </label><input type="text" id="description" name="description">
+                            </li>
+                        </ul>
+                    </details>
+                </details>
             </section>
             <section class="result"></section>
             <aside class="button-control"></aside>
