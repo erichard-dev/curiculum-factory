@@ -1,3 +1,4 @@
+/*----HEADER----*/
 header {
     display: flex;
     align-items: center;
@@ -8,12 +9,28 @@ header h1 {
     border: 1px solid black;
 }
 
+/*----MAIN----*/
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-gap: 5px;
     gap: 5px;
 }
+
+.form {
+    border: 1px solid black;
+}
+
+.result {
+    border: 1px solid black;
+}
+
+.button-control {
+    border: 1px solid black;
+}
+
+/*----FOOTER----*/
 
 footer {
     position: fixed;
