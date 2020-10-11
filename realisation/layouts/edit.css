@@ -11,7 +11,7 @@ header h1 {
 
 /*----MAIN----*/
 
-.grid {
+main {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-gap: 5px;
@@ -20,6 +20,9 @@ header h1 {
 
 .form {
     border: 1px solid black;
+    max-height: 600px;
+    overflow: scroll;
+    min-width: 400px;
 }
 
 .result {
