@@ -1,3 +1,7 @@
+body {
+    border: 1px solid black;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -50,4 +54,10 @@ footer div {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 10px;
+}
+
+@media screen and (max-width: 739px) {
+    footer {
+        position: static;
+    }
 }
