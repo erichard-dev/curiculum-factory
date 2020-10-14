@@ -2,53 +2,67 @@
     <head>
         <meta charset="utf-8"/>
         <link href="home.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
     </head>
     <body>
         <header>
-            <img src="./../images/fleche-retour.jpeg" alt="bouton retour en arrière"/>
             <h1>CV-FACTORY</h1>
-            <img src="./../images/utilisateur.jpeg" alt="bouton compte utilisateur"/>
         </header>
-        <section>
-            <article>
+        <nav>
+            <ul>
+                <li>
+                    <a>modèles</a>
+                </li>
+                <li>
+                    <a>CV</a>
+                </li>
+                <li>
+                    <a>profil</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <article class="applicant">
                 <h1>Candidat</h1>
                 <h2>Les modèles</h2>
-                <img src="./../images/cv.jpeg" alt="bouton voir modèles"/>
-                <p>Créer votre CV à partir de modèles originaux ou classiques 
-                    adaptés à vos besoins. Télécharger votre CV au format 
-                    pdf et partager le avec le monde entier. Publier votre CV
-                    sur notre site pour maximiser votre visibilité. 
+                <aside>
+                    <a class="model1" href="#"><img src="./../images/model1.jpeg" alt="model1"/></a>
+                    <a class="model2" href="#"><img src="./../images/model2.jpeg" alt="model2"/></a>
+                    <a class="model3" href="#"><img src="./../images/model3.jpeg" alt="model3"/></a>
+                    <a href="#"><img src="./../images/troncate.jpeg" alt="model3"/></a>
+                </aside>
+                <p>Créer votre CV à partir de modèles originaux ou classiques adaptés à vos besoins.<br>
+                    Télécharger votre CV au format pdf et partager le avec le monde entier.<br> 
+                    Publier votre CV sur notre site pour maximiser votre visibilité. 
                 </p>
             </article>
-            <article>
+            <article class="headhunter">
                 <h1>Recruteur</h1>
                 <h2>Les candidats</h2>
-                <img src="./../images/cv.jpeg" alt="bouton voir CV"/>
-                <p>Consulter les CV des candidats qui ont choisi de vous 
-                    montrer leurs talents.
-                    Filtrer les candidats selon le profil que vous recherchez.
-                    Prener contact avec vos candidats.
+                <p>
+                    Consulter les CV des candidats qui ont choisi de vous montrer leurs talents.<br>
+                    Filtrer les candidats selon le profil que vous recherchez.<br>
+                    Prener contact avec vos candidats.<br>
+                    <a href="#">Voir les CV</a>
                 </p>
             </article>
-        </section>
+        </main>
         <footer>
-            <div class="test">
-                <div>
-                    navigation
+                <section class="plan">
+                    plan
                     <ul>
                         <li>accueil</li>
                         <li>candidat</li>
                         <li>recruteur</li>
                     </ul>
-                </div>
-                <div>
+                </section>
+                <section class="contact">
                     contact
                     <ul>
                         <li>elliot.r@free.fr</li>
                         <li>sikzen@gmail.com</li>
                     </ul>
-                </div>
-            </div>
+                </section>
         </footer>
     </body>
 </html>
