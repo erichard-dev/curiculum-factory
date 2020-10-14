@@ -6,6 +6,15 @@ body {
     height: 100%;
 }
 
+a {
+    text-decoration-line: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
 /*----DEV----*/
 
 header, nav, footer, main {
