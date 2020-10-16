@@ -1,59 +1,45 @@
 body {
-    display: grid;
-    grid-template-columns: 12;
-    grid-template-rows: 12;
-    margin: 0;
-    height: 100%;
-}
-
-a {
-    text-decoration-line: none;
-    color: black;
-}
-
-a:hover {
-    color: blue;
-}
-
-/*----DEV----*/
-
-header, nav, footer, main {
-    border: 1px solid black;
-}
-
-/*----HEADER----*/
-
-header {
     display: flex;
-    grid-column: 1/7;
-    grid-row: 1/2;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0;
 }
+
+.top-site {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*---HEADER---*/
 
 header h1 {
-    border: 1px solid black;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: 0;
 }
 
-/*----NAV----*/
+header {
+    flex: 1;
+    min-width: 255px;
+}
+
+/*---NAV---*/
 
 nav {
-    display: flex;
-    grid-column: 7/13;
-    grid-row: 1/2;
+    flex: 1;
+    min-width: 350px;
 }
 
 nav ul {
-    align-items: center;
-    width: 100%;
-    border: 1px solid black;
     display: flex;
-    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
     padding: 0;
+    margin: 0;
 }
 
-nav ul li {
-    border: 1px solid black;
+nav li {
     flex: 1;
     text-align: center;
 }
@@ -61,8 +47,6 @@ nav ul li {
 /*----MAIN----*/
 
 main {
-    grid-column: 1/13;
-    grid-row: 2/12;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -81,23 +65,22 @@ aside {
     padding: 10px;
 }
 
-/*----FOOTER----*/
-
 footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 10px;
+    margin-top: 10px;
 }
 
-footer section ul {
+/*---REFORMAT DEFAULT---*/
+
+a {
+    text-decoration-line: none;
+    color: black;
+}
+
+ul {
     list-style: none;
-}
-
-
-footer {
-    grid-column: 1/13;
-    grid-row: 12/13;
 }
 
 @media screen and (max-width: 610px) {
@@ -106,8 +89,4 @@ footer {
 
 @media screen and (max-width: 390px) {
     .model2 { display: none;}
-}
-
-img {
-    border: 1px solid black;
 }
