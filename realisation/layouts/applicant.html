@@ -7,43 +7,44 @@
 </head>
 
 <body>
-    <header>
-        <h1>CV-FACTORY</h1>
-    </header>
-    <nav>
-        <ul>
-            <li>
-                <a>modèles</a>
-            </li>
-            <li>
-                <a>CV</a>
-            </li>
-            <li>
-                <a>profil</a>
-            </li>
-        </ul>
-    </nav>
-    <main>
-        <article>
-            <h1>Candidat</h1>
-            <p>Choisir son modèle</p>
-            <h2>Les modèles</h2>
-            <aside>
-                <a><img src="./../images/model1.jpeg" alt="modele de cv" /></a>
-                <a><img src="./../images/model2.jpeg" alt="modele de cv" /></a>
-                <a><img src="./../images/model3.jpeg" alt="modele de cv" /></a>
-                <a><img src="./../images/model4.jpeg" alt="modele de cv" /></a>
-                <a><img src="./../images/model5.jpeg" alt="modele de cv" /></a>
-                <a><img src="./../images/model6.jpeg" alt="modele de cv" /></a>
-                <a><img src="./../images/model7.jpeg" alt="modele de cv" /></a>
-                <a><img src="./../images/model8.jpeg" alt="modele de cv" /></a>
-                <a><img src="./../images/model9.jpeg" alt="modele de cv" /></a>
-                <a><img src="./../images/model10.jpeg" alt="modele de cv" /></a>
-            </aside>
-        </article>
+    <div>
+        <header>
+            <h1>CV-FACTORY</h1>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a>modèles</a>
+                </li>
+                <li>
+                    <a>CV</a>
+                </li>
+                <li>
+                    <a>profil</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <article>
+                <h1>Candidat</h1>
+                <p>Choisir son modèle</p>
+                <h2>Les modèles</h2>
+                <aside>
+                    <a><img src="./../images/model1.jpeg" alt="modele de cv" /></a>
+                    <a><img src="./../images/model2.jpeg" alt="modele de cv" /></a>
+                    <a><img src="./../images/model3.jpeg" alt="modele de cv" /></a>
+                    <a><img src="./../images/model4.jpeg" alt="modele de cv" /></a>
+                    <a><img src="./../images/model5.jpeg" alt="modele de cv" /></a>
+                    <a><img src="./../images/model6.jpeg" alt="modele de cv" /></a>
+                    <a><img src="./../images/model7.jpeg" alt="modele de cv" /></a>
+                    <a><img src="./../images/model8.jpeg" alt="modele de cv" /></a>
+                    <a><img src="./../images/model9.jpeg" alt="modele de cv" /></a>
+                    <a><img src="./../images/model10.jpeg" alt="modele de cv" /></a>
+                </aside>
+            </article>
 
-    </main>
-
+        </main>
+    </div>
     <footer>
         <section class="plan">
             plan
@@ -61,24 +62,6 @@
             </ul>
         </section>
     </footer>
-    <script>
-        const body = document.querySelector('body');
-        const footer = document.querySelector('footer');
-        if(body.offsetHeight<body.clientHeight) {
-            footer.style.position = "fixed";
-            footer.style.bottom = 0 + "px";
-        }
-        window.onresize = function () {
-            if (body.offsetHeight+footer.offsetHeight < body.clientHeight) {
-                footer.style.position = "fixed";
-                footer.style.bottom = 0 + "px";
-            }else{
-                footer.style.position = "static";
-            }
-            console.log(body.offsetHeight+footer.offsetHeight + "<" + body.clientHeight);
-            console.log(body.offsetHeight+footer.offsetHeight < body.clientHeight);
-        }
-    </script>
 </body>
 
 </html>
