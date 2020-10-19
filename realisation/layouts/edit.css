@@ -50,7 +50,7 @@ main {
     border: 1px solid black;
     flex: 1;
     height: 850px;
-    overflow-y: scroll;
+    overflow: hidden scroll;
     min-width: 300px;
 }
 
