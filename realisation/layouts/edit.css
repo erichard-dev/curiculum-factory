@@ -1,18 +1,9 @@
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    margin: 0;
-}
+/*---HEADER---*/
 
-.top-site {
+div {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
-
-/*---HEADER---*/
 
 header h1 {
     margin: 0;
@@ -46,7 +37,33 @@ nav li {
 
 /*----MAIN----*/
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.form {
+    border: 1px solid black;
+    flex: 1;
+    height: 850px;
+    overflow-y: scroll;
+    min-width: 300px;
+}
+
+.preview {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 4;
+    min-width: 590px;
+}
+
+.pdf {
+    border: 1px solid black;
+    height: 800px;
+    width: 566px;
+}
 
 footer {
     display: flex;
@@ -64,4 +81,16 @@ a {
 
 ul {
     list-style: none;
+}
+
+@media screen and (max-width: 630px) {
+    .pdf {
+        width: 300px;
+        height: 423px;
+    }
+
+    .preview {
+        min-width: auto;
+        flex: 1;
+    }
 }
