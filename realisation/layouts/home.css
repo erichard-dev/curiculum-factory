@@ -6,11 +6,11 @@ body {
     margin: 0;
 }
 
-.top-site {
+.topsite {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
+    }
 
 /*---HEADER---*/
 
@@ -34,7 +34,6 @@ nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100%;
     padding: 0;
     margin: 0;
 }
