@@ -58,71 +58,28 @@
                 </ul>
             </details>
             <details>
-                <summary>Expériences Professionnelles</summary>
-                <ul>
-                    <li>
-                        <details>
-                            <summary>Expérience Professionnelle 1</summary>
-                            <ul class="professional-experience">
-                                <li>
-                                    <label for="compagny">nom de l'entreprise : </label><input type="text" id="compagny"
-                                        name="compagny">
-                                </li>
-                                <li>
-                                    <label for="duration">durée : </label><input type="text" id="duration"
-                                        name="duration" placeholder="26/05/1992-11/10/2020">
-                                </li>
-                                <li>
-                                    <label for="status">position : </label><input type="text" id="status" name="status">
-                                </li>
-                                <li>
-                                    <label for="description">description : </label><input type="text" id="description"
-                                        name="description">
-                                </li>
-                            </ul>
-                        </details>
-                    </li>
-                    <li>
-                        <details>
-                            <summary>Expérience Professionnelle 2</summary>
-                            <ul class="professional-experience">
-                                <li>
-                                    <label for="compagny">nom de l'entreprise : </label><input type="text" id="compagny"
-                                        name="compagny">
-                                </li>
-                                <li>
-                                    <label for="duration">durée : </label><input type="text" id="duration"
-                                        name="duration" placeholder="26/05/1992-11/10/2020">
-                                </li>
-                                <li>
-                                    <label for="status">position : </label><input type="text" id="status" name="status">
-                                </li>
-                                <li>
-                                    <label for="description">description : </label><input type="text" id="description"
-                                        name="description">
-                                </li>
-                            </ul>
-                        </details>
-                    </li>
+                <summary>Expériences Professionnelles<button id="addExperienceButton">nouvelle</button></summary>
+                <ul id="professional-experiences">
                 </ul>
             </details>
             <details>
                 <summary>Formations</summary>
-                <ul>
+                <ul id="trainings">
                     <li>
                         <details>
                             <summary>Formation 1</summary>
                             <ul class="training">
                                 <li>
-                                    <label for="school-name">nom de l'école : </label><input type="text" id="school-name"
-                                        name="schoolname">
+                                    <label for="school-name">nom de l'école : </label><input type="text"
+                                        id="school-name" name="schoolname">
                                 </li>
                                 <li>
-                                    <label for="duration">durée : </label><input type="text" id="duration" name="duration"
-                                        placeholder="26/05/1992-11/10/2020">
+                                    <label for="duration">durée : </label><input type="text" id="duration"
+                                        name="duration" placeholder="26/05/1992-11/10/2020">
                                 </li>
                                 <li>
-                                    <label for="diploma">position : </label><input type="text" id="diploma" name="diploma">
+                                    <label for="diploma">position : </label><input type="text" id="diploma"
+                                        name="diploma">
                                 </li>
                                 <li>
                                     <label for="description">description : </label><input type="text" id="description"
@@ -136,15 +93,16 @@
                             <summary>Formation 2</summary>
                             <ul class="training">
                                 <li>
-                                    <label for="school-name">nom de l'école : </label><input type="text" id="school-name"
-                                        name="schoolname">
+                                    <label for="school-name">nom de l'école : </label><input type="text"
+                                        id="school-name" name="schoolname">
                                 </li>
                                 <li>
-                                    <label for="duration">durée : </label><input type="text" id="duration" name="duration"
-                                        placeholder="26/05/1992-11/10/2020">
+                                    <label for="duration">durée : </label><input type="text" id="duration"
+                                        name="duration" placeholder="26/05/1992-11/10/2020">
                                 </li>
                                 <li>
-                                    <label for="diploma">position : </label><input type="text" id="diploma" name="diploma">
+                                    <label for="diploma">position : </label><input type="text" id="diploma"
+                                        name="diploma">
                                 </li>
                                 <li>
                                     <label for="description">description : </label><input type="text" id="description"
@@ -160,6 +118,94 @@
             <article class="pdf"></article>
         </section>
     </main>
+    <script>
+        // get experience list Node
+        var experiencesUlTag = document.querySelector("#professional-experiences");
+
+        // get add experience button
+        var addExperienceButton = document.querySelector("#addExperienceButton");
+
+        function addFormJobExperience() {
+            var detailTag = document.createElement("details");
+            var summaryTag = document.createElement("summary");
+            var ulTag = document.createElement("ul");
+            var compagnyItem = document.createElement("li");
+            var durationItem = document.createElement("li");
+            var statusItem = document.createElement("li");
+            var descriptionItem = document.createElement("li");
+            var labelCompagnyTag = document.createElement("label");
+            var inputCompagnyTag = document.createElement("input");
+            var labelDurationTag = document.createElement("label");
+            var inputDurationTag = document.createElement("input");
+            var labelStatusTag = document.createElement("label");
+            var inputStatusTag = document.createElement("input");
+            var labelDescriptionTag = document.createElement("label");
+            var inputDescriptionTag = document.createElement("input");
+
+            detailTag.appendChild(summaryTag);
+            detailTag.appendChild(ulTag);
+            
+            compagnyItem.appendChild(labelCompagnyTag);
+            compagnyItem.appendChild(inputCompagnyTag);
+
+            durationItem.appendChild(labelDurationTag);
+            durationItem.appendChild(inputDurationTag);
+
+            statusItem.appendChild(labelStatusTag);
+            statusItem.appendChild(inputStatusTag);
+
+            descriptionItem.appendChild(labelDescriptionTag);
+            descriptionItem.appendChild(inputDescriptionTag);
+
+            ulTag.appendChild(compagnyItem);
+            ulTag.appendChild(durationItem);
+            ulTag.appendChild(statusItem);
+            ulTag.appendChild(descriptionItem);
+
+            summaryTag.textContent = "Expérience professionnelle "+(experiencesUlTag.childElementCount+1);
+
+            ulTag.setAttribute("class", "professional-experience");
+
+            labelCompagnyTag.setAttribute("for", "compagny");
+            labelCompagnyTag.textContent = "nom de l'entreprise";
+            inputCompagnyTag.setAttribute("id", "compagny");
+            inputCompagnyTag.setAttribute("name", "compagny");
+
+            labelDurationTag.setAttribute("for", "duration");
+            labelDurationTag.textContent = "durée";
+            inputDurationTag.setAttribute("id", "duration");
+            inputDurationTag.setAttribute("name", "duration");
+
+            labelStatusTag.setAttribute("for", "status");
+            labelStatusTag.textContent = "position";
+            inputStatusTag.setAttribute("id", "status");
+            inputStatusTag.setAttribute("name", "status");
+
+            labelDescriptionTag.setAttribute("for", "description");
+            labelDescriptionTag.textContent = "description";
+            inputDescriptionTag.setAttribute("id", "description");
+            inputDescriptionTag.setAttribute("name", "description");
+
+            experiencesUlTag.appendChild(document.createElement("li").appendChild(detailTag));
+        };
+        function addFormFormation() {
+
+        };
+        function deleteFormItem() {
+
+        };
+
+        /*function addCvJobExperience() {
+
+        }
+        function addCvFormation() {
+
+        }
+        function deleteCvItem() {
+
+        }*/
+        addExperienceButton.addEventListener("click", addFormJobExperience);
+    </script>
 </body>
 
 </html>
