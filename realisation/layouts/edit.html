@@ -63,7 +63,7 @@
                 </ul>
             </details>
             <details>
-                <summary>Formations</summary>
+                <summary>Formations<button id="addTrainingButton">nouvelle</button></summary>
                 <ul id="trainings">
                     <li>
                         <details>
@@ -74,11 +74,11 @@
                                         id="school-name" name="schoolname">
                                 </li>
                                 <li>
-                                    <label for="duration">durée : </label><input type="text" id="duration"
+                                    <label for="duration">années : </label><input type="text" id="duration"
                                         name="duration" placeholder="26/05/1992-11/10/2020">
                                 </li>
                                 <li>
-                                    <label for="diploma">position : </label><input type="text" id="diploma"
+                                    <label for="diploma">diplôme : </label><input type="text" id="diploma"
                                         name="diploma">
                                 </li>
                                 <li>
@@ -121,9 +121,11 @@
     <script>
         // get experience list Node
         var experiencesUlTag = document.querySelector("#professional-experiences");
+        var trainingsUlTag = document.querySelector("#trainings");
 
         // get add experience button
         var addExperienceButton = document.querySelector("#addExperienceButton");
+        var addTrainingButton = document.querySelector("#addTrainingButton");
 
         function addFormJobExperience() {
             const labels = ["nom de l'entreprise", "durée", "position", "description"];
@@ -154,9 +156,26 @@
             formInput.appendChild(inputElement);
             return formInput;
         }
-        function addFormFormation() {
+        function addFormTraining() {
+            const labels = ["nom de l'école", "années", "diplôme", "description"];
 
+            var detailTag = document.createElement("details");
+            var summaryTag = document.createElement("summary");
+            var ulTag = document.createElement("ul");
+
+            detailTag.appendChild(summaryTag);
+            detailTag.appendChild(ulTag);
+            
+            summaryTag.textContent = "Formation "+(trainingsUlTag.childElementCount+1);
+            ulTag.setAttribute("class", "training");
+
+            labels.forEach(label => {
+                ulTag.appendChild(newFormInput(label));
+            });
+
+            trainingsUlTag.appendChild(document.createElement("li").appendChild(detailTag));
         };
+
         function deleteFormItem() {
 
         };
@@ -171,6 +190,7 @@
 
         }*/
         addExperienceButton.addEventListener("click", addFormJobExperience);
+        addTrainingButton.addEventListener("click", addFormTraining);
     </script>
 </body>
 
