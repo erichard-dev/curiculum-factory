@@ -126,68 +126,34 @@
         var addExperienceButton = document.querySelector("#addExperienceButton");
 
         function addFormJobExperience() {
+            const labels = ["nom de l'entreprise", "durée", "position", "description"];
+            
             var detailTag = document.createElement("details");
             var summaryTag = document.createElement("summary");
             var ulTag = document.createElement("ul");
-            var compagnyItem = document.createElement("li");
-            var durationItem = document.createElement("li");
-            var statusItem = document.createElement("li");
-            var descriptionItem = document.createElement("li");
-            var labelCompagnyTag = document.createElement("label");
-            var inputCompagnyTag = document.createElement("input");
-            var labelDurationTag = document.createElement("label");
-            var inputDurationTag = document.createElement("input");
-            var labelStatusTag = document.createElement("label");
-            var inputStatusTag = document.createElement("input");
-            var labelDescriptionTag = document.createElement("label");
-            var inputDescriptionTag = document.createElement("input");
 
             detailTag.appendChild(summaryTag);
             detailTag.appendChild(ulTag);
             
-            compagnyItem.appendChild(labelCompagnyTag);
-            compagnyItem.appendChild(inputCompagnyTag);
-
-            durationItem.appendChild(labelDurationTag);
-            durationItem.appendChild(inputDurationTag);
-
-            statusItem.appendChild(labelStatusTag);
-            statusItem.appendChild(inputStatusTag);
-
-            descriptionItem.appendChild(labelDescriptionTag);
-            descriptionItem.appendChild(inputDescriptionTag);
-
-            ulTag.appendChild(compagnyItem);
-            ulTag.appendChild(durationItem);
-            ulTag.appendChild(statusItem);
-            ulTag.appendChild(descriptionItem);
-
             summaryTag.textContent = "Expérience professionnelle "+(experiencesUlTag.childElementCount+1);
-
             ulTag.setAttribute("class", "professional-experience");
 
-            labelCompagnyTag.setAttribute("for", "compagny");
-            labelCompagnyTag.textContent = "nom de l'entreprise";
-            inputCompagnyTag.setAttribute("id", "compagny");
-            inputCompagnyTag.setAttribute("name", "compagny");
-
-            labelDurationTag.setAttribute("for", "duration");
-            labelDurationTag.textContent = "durée";
-            inputDurationTag.setAttribute("id", "duration");
-            inputDurationTag.setAttribute("name", "duration");
-
-            labelStatusTag.setAttribute("for", "status");
-            labelStatusTag.textContent = "position";
-            inputStatusTag.setAttribute("id", "status");
-            inputStatusTag.setAttribute("name", "status");
-
-            labelDescriptionTag.setAttribute("for", "description");
-            labelDescriptionTag.textContent = "description";
-            inputDescriptionTag.setAttribute("id", "description");
-            inputDescriptionTag.setAttribute("name", "description");
+            labels.forEach(label => {
+                ulTag.appendChild(newFormInput(label));
+            });
 
             experiencesUlTag.appendChild(document.createElement("li").appendChild(detailTag));
         };
+
+        function newFormInput(label) {
+            let formInput = document.createElement("li");
+            let labelElement = document.createElement("label");
+            let inputElement = document.createElement("input");
+            labelElement.textContent = label;
+            formInput.appendChild(labelElement);
+            formInput.appendChild(inputElement);
+            return formInput;
+        }
         function addFormFormation() {
 
         };
