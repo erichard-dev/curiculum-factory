@@ -101,15 +101,6 @@
             experiencesUlTag.appendChild(document.createElement("li").appendChild(detailTag));
         };
 
-        function newFormInput(label) {
-            let formInput = document.createElement("li");
-            let labelElement = document.createElement("label");
-            let inputElement = document.createElement("input");
-            labelElement.textContent = label;
-            formInput.appendChild(labelElement);
-            formInput.appendChild(inputElement);
-            return formInput;
-        }
         function addFormTraining() {
             const labels = ["nom de l'école", "années", "diplôme", "description"];
 
@@ -129,6 +120,16 @@
 
             trainingsUlTag.appendChild(document.createElement("li").appendChild(detailTag));
         };
+
+        function newFormInput(label) {
+            let formInput = document.createElement("li");
+            let labelElement = document.createElement("label");
+            let inputElement = document.createElement("input");
+            labelElement.textContent = label;
+            formInput.appendChild(labelElement);
+            formInput.appendChild(inputElement);
+            return formInput;
+        }
 
         function deleteFormItem() {
 
